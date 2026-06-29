@@ -22,7 +22,7 @@ const app = express();
 app.use(express.json());
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Gemini model — gemini-1.5-flash is free tier and very fast
 const GEMINI_MODEL = "gemini-1.5-flash";
