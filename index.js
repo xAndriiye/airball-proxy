@@ -56,7 +56,7 @@ app.post('/gemini', async (req, res) => {
                 system_instruction: body.system_instruction,
                 contents: body.contents.slice(-10), // limit history
                 generationConfig: {
-                    maxOutputTokens: 150,
+                    maxOutputTokens: 500,
                     temperature: 1.0,
                     ...body.generationConfig,
                 },
